@@ -1,39 +1,16 @@
-# Qiang 0.3.8
+# Qiang 0.3.9
 
-## 打包：正式版和自用版
+## 打包
 
 源码构建需要 Python 3、JDK 17、Android SDK Platform 36.1 和 Build Tools 36.0.0。
-可通过 `ANDROID_SDK_ROOT`（或 `ANDROID_HOME`）和 `ADSKIP_JAVA_HOME` 指定安装路径；
-首次构建会下载 OCR 依赖。
+可通过 `ANDROID_SDK_ROOT`（或 `ANDROID_HOME`）和 `ADSKIP_JAVA_HOME` 指定安装路径。
 
-运行 `bash scripts/build.sh` 默认同时生成两个 APK，也可使用
-`bash scripts/build.sh release` 或 `bash scripts/build.sh personal` 单独构建。
+```bash
+bash scripts/build.sh
+```
 
-| 输出（位于 artifacts） | 用途 | 构建方式 |
-| --- | --- | --- |
-| `adskip-版本号-release.apk` | 发给其他人使用 | R8 代码混淆、裁剪和优化；关闭调试；独立发布签名 |
-| `adskip-版本号-personal.apk` | 自用、排障 | 不混淆；保留调试信息；沿用本机已有调试签名，没有时生成新签名 |
-
-正式版使用 AAPT 自动生成的入口保留规则和依赖库的 consumer rules，保留无障碍服务、
-界面及 ML Kit 的反射/JNI 入口。代码混淆增加分析难度，不属于加壳或 APK 加密，
-内置规则、资源和模型仍可能被提取。
-
-首次构建正式版会在本地生成 `artifacts/release.jks` 和
-`artifacts/release-signing.json`（签名密码配置），之后始终复用。
-请将这两个文件一起私下备份；丢失后无法用原签名更新已分发的正式版。
-两者均被 Git 忽略，文件权限为仅当前用户可读写，密码不写入命令行。
-不要发送密钥、密码配置或 `artifacts/adskip-版本号-release-private/` 中的混淆映射。
-
-两版包名一致、签名不同，不能同时安装或相互覆盖升级。
-保留原调试密钥时，自用版可以覆盖旧调试版；新电脑生成不同签名时需要先卸载旧版。
-首次切换正式版需先导出规则，再卸载旧版、
-安装正式版并重新启用无障碍服务。后续正式版可用同一发布签名更新。
-现有无后缀 APK 不会被新脚本覆盖；分享时请核对文件名。
-
-构建后运行 `python3 scripts/verify-apks.py` 检查两版实际 APK 的调试标志、
-混淆结果、签名区别以及 OCR 资源是否完整。`scripts/build.sh` 会自动执行这项检查。
-无手机连接时该检查不能替代真机验证；正式分发前应验证服务启用、OCR 识别、
-自动跳过、框选规则以及已有正式版的覆盖更新。
+APK 生成于 `artifacts/adskip-0.3.9-release.apk`。首次构建会下载 OCR 依赖，脚本会自动检查 APK。
+请私下备份 `artifacts/release.jks` 和 `artifacts/release-signing.json`，以便后续更新应用；这两个文件不会提交到 Git。
 
 # 使用教程
 
