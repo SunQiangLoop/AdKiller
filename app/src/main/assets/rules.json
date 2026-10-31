@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "version": 2,
+  "apps": [
+    {
+      "packageName": "com.miui.player",
+      "name": "小米音乐",
+      "skipIds": [
+        "com.miui.player:id/ad_skip"
+      ],
+      "sampledVersion": "4.46.6.1",
+      "visual": {
+        "template": "music",
+        "textBounds": [
+          1065,
+          237,
+          1146,
+          280
+        ],
+        "tap": [
+          1100,
+          260
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    },
+    {
+      "packageName": "com.MobileTicket",
+      "name": "铁路12306",
+      "skipIds": [
+        "com.MobileTicket:id/tv_skip"
+      ],
+      "sampledVersion": "5.9.6.8",
+      "visual": {
+        "template": "rail",
+        "textBounds": [
+          1016,
+          181,
+          1112,
+          234
+        ],
+        "tap": [
+          1064,
+          203
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    },
+    {
+      "packageName": "com.autonavi.minimap",
+      "name": "高德地图",
+      "skipIds": [],
+      "sampledVersion": "17.00.0.2005"
+    },
+    {
+      "packageName": "tv.danmaku.bili",
+      "name": "哔哩哔哩",
+      "skipIds": [],
+      "sampledVersion": "9.13.0",
+      "visual": {
+        "template": "bili",
+        "textBounds": [
+          958,
+          2476,
+          1059,
+          2540
+        ],
+        "tap": [
+          1030,
+          2503
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    },
+    {
+      "packageName": "com.taobao.taobao",
+      "name": "淘宝",
+      "skipIds": [],
+      "sampledVersion": "10.66.40"
+    },
+    {
+      "packageName": "com.jingdong.app.mall",
+      "name": "京东",
+      "skipIds": [],
+      "sampledVersion": "15.10.0"
+    },
+    {
+      "packageName": "com.baidu.netdisk",
+      "name": "百度网盘",
+      "skipIds": [
+        "com.baidu.netdisk:id/vilon_close_text"
+      ],
+      "sampledVersion": "13.31.6",
+      "visual": {
+        "template": "netdisk",
+        "textBounds": [
+          974,
+          92,
+          1073,
+          150
+        ],
+        "tap": [
+          1055,
+          114
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      },
+      "visualVariants": [
+        {
+          "template": "netdiskblue",
+          "textBounds": [
+            1075,
+            155,
+            1166,
+            205
+          ],
+          "tap": [
+            1118,
+            179
+          ],
+          "referenceWidth": 1220,
+          "referenceHeight": 2712
+        }
+      ]
+    },
+    {
+      "packageName": "com.quark.browser",
+      "name": "夸克 / 夸克网盘",
+      "skipIds": [],
+      "sampledVersion": "10.15.6.1131"
+    },
+    {
+      "packageName": "com.xunlei.downloadprovider",
+      "name": "迅雷",
+      "skipIds": [],
+      "sampledVersion": "25.2.00.185",
+      "visual": {
+        "template": "xunlei",
+        "textBounds": [
+          1060,
+          188,
+          1154,
+          240
+        ],
+        "tap": [
+          1078,
+          211
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    },
+    {
+      "packageName": "com.android.browser",
+      "name": "小米浏览器",
+      "skipIds": [],
+      "sampledVersion": "20.29.1010928"
+    },
+    {
+      "packageName": "com.tencent.mtt",
+      "name": "QQ浏览器",
+      "skipIds": [],
+      "sampledVersion": "20.5.0.0069",
+      "visual": {
+        "template": "qqbrowser",
+        "textBounds": [
+          1058,
+          175,
+          1140,
+          227
+        ],
+        "tap": [
+          1082,
+          198
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    },
+    {
+      "packageName": "com.UCMobile",
+      "name": "UC浏览器",
+      "skipIds": [],
+      "visual": {
+        "template": "uc",
+        "textBounds": [
+          402,
+          166,
+          475,
+          204
+        ],
+        "tap": [
+          438,
+          185
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      },
+      "visualVariants": [
+        {
+          "template": "ucshort",
+          "textBounds": [
+            1018,
+            118,
+            1106,
+            166
+          ],
+          "tap": [
+            1062,
+            142
+          ],
+          "referenceWidth": 1220,
+          "referenceHeight": 2712
+        },
+        {
+          "template": "uccircle",
+          "textBounds": [
+            1071,
+            157,
+            1159,
+            205
+          ],
+          "tap": [
+            1115,
+            181
+          ],
+          "referenceWidth": 1220,
+          "referenceHeight": 2712
+        }
+      ]
+    },
+    {
+      "packageName": "com.ss.android.ugc.aweme",
+      "name": "抖音",
+      "skipIds": [],
+      "visual": {
+        "template": "douyin",
+        "textBounds": [
+          997,
+          198,
+          1078,
+          242
+        ],
+        "tap": [
+          1037,
+          220
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    },
+    {
+      "packageName": "com.xiaomi.smarthome",
+      "name": "米家",
+      "skipIds": [],
+      "visual": {
+        "template": "mijia",
+        "textBounds": [
+          985,
+          194,
+          1088,
+          245
+        ],
+        "tap": [
+          1036,
+          219
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712,
+        "darkText": true
+      }
+    },
+    {
+      "packageName": "com.xiaomi.market",
+      "name": "小米应用商店",
+      "skipIds": [],
+      "visual": {
+        "template": "market",
+        "textBounds": [
+          928,
+          145,
+          1093,
+          189
+        ],
+        "tap": [
+          1010,
+          167
+        ],
+        "referenceWidth": 1220,
+        "referenceHeight": 2712
+      }
+    }
+  ]
+}

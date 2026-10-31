@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Qiang</string>
+    <string name="accessibility_enable_message">开启自动跳过后，服务会读取应用的界面控件，并代你点击已识别的开屏跳过按钮。所有应用统一使用专用规则或通用识别，内容只在本机处理。\n\n在系统设置中找到「%1$s」并开启；你可以随时在这里暂停。</string>
+</resources>
